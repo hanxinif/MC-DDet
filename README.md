@@ -1,56 +1,49 @@
-# [IEEE TIM] ETDNet for Surface Defect Detection
+# -
 
-## :loudspeaker: Introduction
-This is the official implementation of our paper titled "ETDNet: Efficient Transformer-Based Detection Network for Surface Defect Detection". This paper has been accepted by IEEE Transactions on Instrumentation and Measurement (IEEE TIM). 
+## :-
+The structure of DFeS-DNet is as follows:
 
-For more details, please refer to our [paper](https://ieeexplore.ieee.org/abstract/document/10227321). This repo is based on PyTorch.
+<img src="assets/DFeS-DNet.png">
 
-<img src="assets/etdnet.png">
+## :open_file_folder: Datasets and Weights
+In this paper, we use NEU-DET dataset in COCO style. 
 
-## :open_file_folder: Datasets and Weight
-We release NEU-DET dataset used in this paper, including VOC style and COCO style. Note that five-flod cross-validation is used to divide the dataset.
-
-Download the dataset(s) from corresponding links below.
- - NEU-DET: [Google Drive](https://drive.google.com/drive/folders/1m0qVeSlcugL2VgLMjm6xHcJdxfoPphjB?usp=drive_link); [BaiduNetDisk](https://pan.baidu.com/s/1moXNI4dXpvxn-jxSZMN-zw?pwd=ty4t)
-
-The COCO pretrained weight of our ETDNet:
- - ETDNet Weight: [Google Drive](https://drive.google.com/file/d/1XvVbfRJJFJd5jEkhfyvwZDHGj2Rw5rAs/view?usp=drive_link); [BaiduNetDisk](https://pan.baidu.com/s/1-c_-Jb6WFjSFXqjV98FtCA?pwd=iug2)
+Download datasets and weigths from corresponding links below.
+ - Datasets and weigths: [BaiduNetDisk](https://pan.baidu.com/s/1mQRKodaV8Qokru4IkCyP_w?pwd=edct); [OneDrive](https://1drv.ms/f/c/bea5f6127a67401e/EtLB1J96b7VIjy8oYK1biTsBFrRYYOUclvqVrEkbSP0GTQ?e=bHH9C1)
 
 
 ## 🚀 Training
-More configuration please see tools/mytrain.py and exps/neu_det/etdnet_neu_flod1.py, where you can set device num, dataset path, batch size, weight path, and so on.
+More configuration please see tools/mytrain.py and exps/neu_det/neu-det.py, where you can set device num, dataset path, batch size, weight path, and so on.
 ```
-python3 tools/mytrain.py -f exps/neu_det/etdnet_neu_flod1.py -d 4 -b 16 -c weigth/etdnet.pth --fp16
+python3 tools/mytrain.py -f exps/neu_det/etdnet_neu_flod1.py -d 2 -b 8 -c weigth/coco_weigth.pth --fp16
 ```
 
-## :trophy: Result
-Our ETDNet achieves excellent performance on the NEU-DET dataset and is more lightweight and efficient.
+## 🚀 demoing
+More configuration please see tools/demo.py and exps/neu_det/neu-det.py, where you can set folder path, dataset path, weight path, and so on.
+```
+python3 tools/demo.py -path demo_files -f exps/neu_det/neu-det.py -c weigth/neu-det-weigth.pth --fp16
+```
 
-<img src="assets/ETDNet_performance.png">
+## :trophy: Results
+Our DFeS-DNet achieves excellent performance on NEU-DET dataset and is more lightweight and efficient.
 
-The detection accuracy of our method is much higher than that of the yolo series.
+<img src="assets/experiment_1.png">
 
-<img src="assets/ETDNet_yolo.png">
+<img src="assets/experiment_2.png">
 
 ## :ferris_wheel: Visualization
 
-Examples of detection results obtained by the proposed ETDNet on NEU-DET dataset. (a) Ground truth; (b) Prediction images by ETDNet.
+Examples of detection results obtained by the proposed DFeS-DNet on NEU-DET dataset. (a) Ground truth; (b) Prediction images by ETDNet; (c) Prediction images by DFeS-DNet;
 
-<img src="assets/neu_det.png">
+<img src="assets/Detection_results.png">
 
 ## 📚  Citation
 Please cite our work if you find our work and codes helpful for your research.
 ```
-@article{zhou2023etdnet,
-  title={ETDNet: Efficient Transformer-based Detection Network for Surface Defect Detection},
-  author={Zhou, Hantao and Yang, Rui and Hu, Runze and Shu, Chang and Tang, Xiaochu and Li, Xiu},
-  journal={IEEE Transactions on Instrumentation and Measurement},
-  year={2023},
-  publisher={IEEE}
-}
+-
 ```
 
 ## Acknowledgement
 
-This project is built upon numerous previous projects. We'd like to thank the contributors of [YOLOX](https://github.com/Megvii-BaseDetection/YOLOX).
+This project is built upon numerous previous projects. We'd like to thank the contributors of [ETDNet](https://github.com/zht8506/ETDNet).
 
