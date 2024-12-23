@@ -33,7 +33,7 @@ Our DFeS-DNet achieves excellent performance on NEU-DET dataset and is more ligh
 
 ## :ferris_wheel: Visualization
 
-Examples of detection results obtained by the proposed DFeS-DNet on NEU-DET dataset. (a) Ground truth; (b) Prediction images by ETDNet; (c) Prediction images by DFeS-DNet;
+Examples of detection results obtained by the proposed DFeS-DNet on NEU-DET dataset. (a) Ground truth; (b) Prediction images by the Baseline; (c) Prediction images by DFeS-DNet;
 
 <img src="assets/Detection_results.png">
 
