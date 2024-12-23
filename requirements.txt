@@ -8,6 +8,9 @@ torchvision
 thop
 ninja
 tabulate
+tensorboard
+timm
+mmengine
 
 # verified versions
 # pycocotools corresponds to https://github.com/ppwwyyxx/cocoapi
@@ -15,7 +18,4 @@ pycocotools>=2.0.2
 onnx==1.8.1
 onnxruntime==1.8.0
 onnx-simplifier==0.3.5
-tensorboard
-timm
-mmengine
 mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu101/torch1.7.0/index.html
