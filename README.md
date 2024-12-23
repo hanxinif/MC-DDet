@@ -15,13 +15,13 @@ Download datasets and weigths from corresponding links below.
 ## 🚀 Training
 More configuration please see tools/mytrain.py and exps/neu_det/neu-det.py, where you can set device num, dataset path, batch size, weight path, and so on.
 ```
-python3 tools/mytrain.py -f exps/neu_det/etdnet_neu_flod1.py -d 2 -b 8 -c weigth/coco_weigth.pth --fp16
+python3 tools/mytrain.py -f exps/neu_det/neu-det.py -d 2 -b 8 -c weigth/coco_weigth.pth --fp16
 ```
 
 ## 🚀 demoing
 More configuration please see tools/demo.py and exps/neu_det/neu-det.py, where you can set folder path, dataset path, weight path, and so on.
 ```
-python3 tools/demo.py -path demo_files -f exps/neu_det/neu-det.py -c weigth/neu-det-weigth.pth --fp16
+python3 tools/demo.py --path demo_files -f exps/neu_det/neu-det.py -c weigth/neu-det-weigth.pth --fp16
 ```
 
 ## :trophy: Results
