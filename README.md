@@ -33,7 +33,7 @@ Our MC-DDet achieves excellent performance on NEU-DET dataset and is more lightw
 
 ## :ferris_wheel: Visualization
 
-Examples of detection results obtained by the proposed MC-DDet on NEU-DET dataset. (a) Ground truth; (b) Prediction images by the Baseline; (c) Prediction images by DFeS-DNet;
+Examples of detection results obtained by the proposed MC-DDet on NEU-DET dataset. (a) Ground truth; (b) Prediction images by the Baseline; (c) Prediction images by MC-DDet;
 
 <img src="assets/Detection_results.png">
 
