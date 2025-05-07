@@ -1,7 +1,7 @@
 # -
 
 ## :-
-The structure of DFeS-DNet is as follows:
+The structure of MC-DDet is as follows:
 
 <img src="assets/DFeS-DNet.png">
 
@@ -25,7 +25,7 @@ python3 tools/demo.py --path demo_files -f exps/neu_det/neu-det.py -c weigth/neu
 ```
 
 ## :trophy: Results
-Our DFeS-DNet achieves excellent performance on NEU-DET dataset and is more lightweight and efficient.
+Our MC-DDet achieves excellent performance on NEU-DET dataset and is more lightweight and efficient.
 
 <img src="assets/experiment_1.png">
 
@@ -33,7 +33,7 @@ Our DFeS-DNet achieves excellent performance on NEU-DET dataset and is more ligh
 
 ## :ferris_wheel: Visualization
 
-Examples of detection results obtained by the proposed DFeS-DNet on NEU-DET dataset. (a) Ground truth; (b) Prediction images by the Baseline; (c) Prediction images by DFeS-DNet;
+Examples of detection results obtained by the proposed MC-DDet on NEU-DET dataset. (a) Ground truth; (b) Prediction images by the Baseline; (c) Prediction images by DFeS-DNet;
 
 <img src="assets/Detection_results.png">
 
