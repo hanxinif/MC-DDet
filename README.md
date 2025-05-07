@@ -3,7 +3,7 @@
 ## :-
 The structure of MC-DDet is as follows:
 
-<img src="assets/DFeS-DNet.png">
+<img src="assets/xx.png">
 
 ## :open_file_folder: Datasets and Weights
 In this paper, we use NEU-DET dataset in COCO style. 
@@ -27,15 +27,15 @@ python3 tools/demo.py --path demo_files -f exps/neu_det/neu-det.py -c weigth/neu
 ## :trophy: Results
 Our MC-DDet achieves excellent performance on NEU-DET dataset and is more lightweight and efficient.
 
-<img src="assets/experiment_1.png">
+<img src="assets/xx.png">
 
-<img src="assets/experiment_2.png">
+<img src="assets/xx.png">
 
 ## :ferris_wheel: Visualization
 
 Examples of detection results obtained by the proposed MC-DDet on NEU-DET dataset. (a) Ground truth; (b) Prediction images by the Baseline; (c) Prediction images by MC-DDet;
 
-<img src="assets/Detection_results.png">
+<img src="assets/xx.png">
 
 ## 📚  Citation
 Please cite our work if you find our work and codes helpful for your research.
