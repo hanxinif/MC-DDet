@@ -1,9 +1,10 @@
-# -
+# [IEEE SENSORS JOURNAL] MC-DDet for Steel Strip Surface Defect Detection
 
-## :-
-The structure of MC-DDet is as follows:
+## 📢: Introduction
+This is the official implementation of our paper titled "MC-DDet: Lightweight Mini-Channel Detector for Steel Strip Surface Defect Detection". This paper has been accepted by IEEE SENSORS JOURNAL.
+For more details, please refer to our [paper](https://ieeexplore.ieee.org/document/11175294). This repo is based on PyTorch.
 
-<img src="assets/xx.png">
+<img src="assets/MC-DDet.png">
 
 ## :open_file_folder: Datasets and Weights
 In this paper, we use NEU-DET dataset in COCO style. 
@@ -27,20 +28,31 @@ python3 tools/demo.py --path demo_files -f exps/neu_det/neu-det.py -c weigth/neu
 ## :trophy: Results
 Our MC-DDet achieves excellent performance on NEU-DET dataset and is more lightweight and efficient.
 
-<img src="assets/xx.png">
-
-<img src="assets/xx.png">
+<img src="assets/performance.png">
 
 ## :ferris_wheel: Visualization
 
-Examples of detection results obtained by the proposed MC-DDet on NEU-DET dataset. (a) Ground truth; (b) Prediction images by the Baseline; (c) Prediction images by MC-DDet;
+Examples of detection results obtained by the proposed MC-DDet on NEU-DET dataset.
 
-<img src="assets/xx.png">
+<img src="assets/visualization.png">
+
+Heatmap visualization.
+
+<img src="assets/heatmaps.png">
 
 ## 📚  Citation
 Please cite our work if you find our work and codes helpful for your research.
 ```
--
+@ARTICLE{11175294,
+  author={Guan, Shengqi and Hou, Ling and Shen, Jiayu and Song, Yichen},
+  journal={IEEE Sensors Journal}, 
+  title={MC-DDet: Lightweight Mini-Channel Detector for Steel Strip Surface Defect Detection}, 
+  year={2025},
+  volume={25},
+  number={21},
+  pages={40214-40222},
+  keywords={Feature extraction;Accuracy;Detectors;Defect detection;Computational complexity;Strips;Steel;Sea surface;Intelligent sensors;Computational efficiency;Deep learning;feature extraction;industrial defect detection;lightweight neural network;strip steel surface defect},
+  doi={10.1109/JSEN.2025.3610444}}
 ```
 
 ## Acknowledgement
